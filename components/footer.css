@@ -1,0 +1,41 @@
+footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 147px;
+    background-color: #2C2C2C;
+  }
+  .footer__subdivision-logo {
+  }
+
+  .footer__subdivision-logo__logo-inferior {
+    width: 250px;
+  }
+  .footer__redes-sociales {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 36px;
+  }
+  .footer__red-social {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  
+  .footer__red-social__texto {
+    color: white;
+    font-size: 16px;
+  }
+  
+  .footer__red-social__logotipo {
+    fill: white;
+  }
+  
+  @media (min-width: 800px) {
+    footer {
+      flex-flow: row;
+      justify-content: space-between;
+    }
+  }

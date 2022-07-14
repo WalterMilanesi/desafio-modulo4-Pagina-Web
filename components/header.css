@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px;
+}
+
+.header__logo {
+  width: 122px;
+  height: 48px;
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__menu-link {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .header__menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+  }
+  .header__menu-link {
+    display: inherit;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+  }
+}
