@@ -36,6 +36,5 @@ function createElFooter(el) {
     </div>
   </div>
     `;
-    // En el espacio en blanco completamos con el código del botón de hamburguesa
     el.appendChild(componentEl);
   }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="./components/header.js"></script>
     <script defer src="./components/footer.js"></script>
+    <script defer src="./components/contactform.js"></script>
     <script defer src="./pages/index.js"></script>
     <script defer src="./components/burgerbutton.js"></script>
 
@@ -19,6 +20,7 @@
     />
     <link rel="stylesheet" href="./components/header.css" />
     <link rel="stylesheet" href="./components/footer.css" />
+    <link rel="stylesheet" href="./components/contactform.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="stylesheet" href="./components/burgerbutton.css" />
 
@@ -45,7 +47,6 @@
       </p>
     </section>
 
-    
     <section class="services">
       <h2 class="services__title">Nuestros servicios</h2>
       <div class="services__offer"></div>
@@ -67,26 +68,7 @@
       </div>
     </template>
 
-    <section class="contact">
-      <h2 class="contact__title">Escribenos</h2>
-      <form class="contact__form">
-        <label>
-          <h3 class="contact__label">Nombre</h3>
-          <input type="text" class="contact__input" />
-        </label>
-        <label>
-          <h3 class="contact__label">Email</h3>
-          <input type="mail" class="contact__input" />
-        </label>
-        <label>
-          <h3 class="contact__label">Mensaje</h3>
-          <textarea class="contact__input-mensaje"></textarea>
-        </label>
-        <div class="contact__submit-cont">
-          <button class="contact__submit-button">Enviar</button>
-        </div>
-      </form>
-    </section>
+    <div class="contact-cont"></div>
 
     <div class="footer-cont"></div>
   </body>
