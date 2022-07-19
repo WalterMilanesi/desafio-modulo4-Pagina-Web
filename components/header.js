@@ -14,16 +14,16 @@ function createElHeader(el) {
         </button>
         </div>
         <nav class="header__menu-burger">
-        <a href="" class="header__menu-burger-link">Portfolio</a>
-        <a href="" class="header__menu-burger-link">Servicios</a>
-        <a href="" class="header__menu-burger-link">Contacto</a>
+        <a href="./portfolio.html" class="header__menu-burger-link">Portfolio</a>
+        <a href="./servicies.html" class="header__menu-burger-link">Servicios</a>
+        <a href="./contact.html" class="header__menu-burger-link">Contacto</a>
         </nav>
         </div>
 
     <nav class="header__menu">
-      <a href="" class="header__menu-link">Portfolio</a>
-      <a href="" class="header__menu-link">Servicios</a>
-      <a href="" class="header__menu-link">Contacto</a>
+      <a href="./portfolio.html" class="header__menu-link">Portfolio</a>
+      <a href="./servicies.html" class="header__menu-link">Servicios</a>
+      <a href="./contact.html" class="header__menu-link">Contacto</a>
     </nav>
     </div>
   `;
