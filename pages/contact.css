@@ -12,12 +12,6 @@
     background: #024747;
   }
 
-  /* Aquí tengo que poner una regla más específica que la que genera el archivo contactform.css*/
-
-  /* .contact {
-    
-  } */
-
   @media (min-width: 800px) {
     .welcome-cont {
         background: linear-gradient(125deg, #F5D000, #FF8033);
