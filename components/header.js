@@ -2,7 +2,9 @@ function createElHeader(el) {
   const componentEl = document.createElement("header");
   componentEl.innerHTML = `
     <div class="header">
+    <a href="./index.html">
     <img src="./images/logoNNF.svg" alt="" class="header__logo" />
+    </a>
 
     <button class="abre-ventana">
         <img src="./images/burger.svg" alt="">
@@ -27,6 +29,6 @@ function createElHeader(el) {
     </nav>
     </div>
   `;
-  // En el espacio en blanco completamos con el código del botón de hamburguesa
+  
   el.appendChild(componentEl);
 }

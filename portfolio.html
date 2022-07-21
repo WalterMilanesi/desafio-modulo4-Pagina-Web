@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./components/header.js"></script>
+    <script defer src="./components/footer.js"></script>
+    <script defer src="./pages/portfolio.js"></script>
+    <script defer src="./components/burgerbutton.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./components/header.css" />
+    <link rel="stylesheet" href="./components/footer.css" />
+    <link rel="stylesheet" href="./pages/portfolio.css" />
+    <link rel="stylesheet" href="./components/burgerbutton.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="welcome-cont">
+      <div class="header-cont"></div>
+
+      <section class="services">
+        <h2 class="services__title">Lee nuestros últimos artículos</h2>
+        <div class="services__offer"></div>
+      </section>
+    </div>
+
+    <template id="services__offer__service-template">
+      <div class="services__offer__service">
+        <img
+          src="https://picsum.photos/300/200?grayscale"
+          alt=""
+          class="services__offer__service__img"
+        />
+        <h3 class="services__offer__service__title">Hago cosas</h3>
+        <p class="services__offer__service__text">
+          Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+          vehicula velit. Aenean lobortis posuere tristique.
+        </p>
+        <a class="services__offer__service__link" href="">Sigue leyendo</a>
+      </div>
+    </template>
+
+    <div class="footer-cont"></div>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 function createElFooter(el) {
-    const componentEl = document.createElement("footer");
-    componentEl.innerHTML = `
+  const componentEl = document.createElement("footer");
+  componentEl.innerHTML = `
     <div class="footer__subdivision-logo">
     <img
       class="footer__subdivision-logo__logo-inferior"
@@ -36,5 +36,5 @@ function createElFooter(el) {
     </div>
   </div>
     `;
-    el.appendChild(componentEl);
-  }
+  el.appendChild(componentEl);
+}

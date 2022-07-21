@@ -1,27 +1,27 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-  }
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.welcome-cont {
+  background: #024747;
+}
+
+@media (min-width: 800px) {
   .welcome-cont {
-    background: #024747;
+    background: linear-gradient(125deg, #f5d000, #ff8033);
   }
-
-  @media (min-width: 800px) {
-    .welcome-cont {
-        background: linear-gradient(125deg, #F5D000, #FF8033);
-      }
-    .contact {
-        background: transparent;
-    }
-    .contact__submit-button{
-        border: solid;
-        border-color: black;
-        border-width: 1px;
-    }
+  .contact {
+    background: transparent;
   }
+  .contact__submit-button {
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+  }
+}
