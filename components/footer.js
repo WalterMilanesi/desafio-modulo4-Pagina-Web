@@ -2,11 +2,13 @@ function createElFooter(el) {
   const componentEl = document.createElement("footer");
   componentEl.innerHTML = `
     <div class="footer__subdivision-logo">
+    <a href="./index.html">
     <img
       class="footer__subdivision-logo__logo-inferior"
       src="./images/logoNNF.svg"
       alt="Logo del desarrollador"
     />
+    </a>
   </div>
 
   <div class="footer__redes-sociales">

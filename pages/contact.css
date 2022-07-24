@@ -25,3 +25,9 @@ body {
     border-width: 1px;
   }
 }
+
+@media (hover: hover){
+  .contact__submit-button:hover{
+    border: solid 4px #2c2c2c;
+  }
+}
