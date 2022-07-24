@@ -53,6 +53,18 @@
   margin-top: 60px;
 }
 
+.contact__message__success{
+  color: green;
+  text-align: center;
+  display: none;
+}
+
+.contact__message__danger{
+  color: red;
+  text-align: center;
+  display: none;
+}
+
 @media (min-width: 800px) {
   .contact {
     flex-flow: row;

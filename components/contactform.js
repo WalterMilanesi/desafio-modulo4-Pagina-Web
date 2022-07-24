@@ -6,19 +6,23 @@ function createElContactForm(el) {
     <form class="contact__form">
       <label>
         <h3 class="contact__label">Nombre</h3>
-        <input type="text" class="contact__input" name="name"/>
+        <input type="text" class="contact__input" name="name" id="name"/>
       </label>
       <label>
         <h3 class="contact__label">Email</h3>
-        <input type="mail" class="contact__input" name="email"/>
+        <input type="mail" class="contact__input" name="email" id="email"/>
       </label>
       <label>
         <h3 class="contact__label">Mensaje</h3>
-        <textarea class="contact__input-mensaje" name="message"></textarea>
+        <textarea class="contact__input-mensaje" name="message" id="msg"></textarea>
       </label>
       <div class="contact__submit-cont">
         <button class="contact__submit-button">Enviar</button>
       </div>
+      <div class="message">
+      <div class="contact__message__success">Gracias por confiar, tu mensaje se ha enviado sin problemas</div>
+      <div class="contact__message__danger">Disculpa, pero no pueden quedar campos en blanco</div>
+    </div>
     </form>
   </section>
     `;
@@ -32,20 +36,43 @@ function sendForm() {
   formEl.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData.entries());
+    var name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var message = document.getElementById("msg");
+    const success = document.querySelector(".contact__message__success");
+    const danger = document.querySelector(".contact__message__danger");
 
-    fetch("https://apx-api.vercel.app/api/utils/dwf", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        to: "waltermilanesi@hotmail.com",
-        message: `Nombre De Usuario: ${data.name}, 
+    if (name.value === "" || email.value === "" || message.value === "") {
+      danger.style.display = "block";
+      setTimeout(() => {
+        danger.style.display = "none";
+      }, 2000);
+    } else {
+      const formData = new FormData(event.target);
+      const data = Object.fromEntries(formData.entries());
+      console.log(data);
+
+      fetch("https://apx-api.vercel.app/api/utils/dwf", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          to: "waltermilanesi@hotmail.com",
+          message: `Nombre De Usuario: ${data.name}, 
         Correo Electrónico: ${data.email}, 
         Mensaje: ${data.message}`,
-      }),
-    })
-      .then((res) => res.text())
-      .then((res) => console.log(res));
+        }),
+      })
+        .then(
+          console.log(
+            "Te podés quedar tranquilo que el formulario se envió correctamente"
+          )
+        )
+        .then(formEl.reset());
+
+      success.style.display = "block";
+      setTimeout(() => {
+        success.style.display = "none";
+      }, 2000);
+    }
   });
 }
