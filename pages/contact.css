@@ -26,8 +26,8 @@ body {
   }
 }
 
-@media (hover: hover){
-  .contact__submit-button:hover{
+@media (hover: hover) {
+  .contact__submit-button:hover {
     border: solid 4px #2c2c2c;
   }
 }

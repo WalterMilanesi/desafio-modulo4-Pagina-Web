@@ -29,6 +29,6 @@ function createElHeader(el) {
     </nav>
     </div>
   `;
-  
+
   el.appendChild(componentEl);
 }

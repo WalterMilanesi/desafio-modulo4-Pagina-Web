@@ -23,7 +23,7 @@ function createElContactForm(el) {
       <div class="contact__message__success">Gracias por confiar, tu mensaje se ha enviado sin problemas</div>
       <div class="contact__message__danger">Disculpa, pero no pueden quedar campos en blanco</div>
     </div>
-    </form>
+      </form>
   </section>
     `;
   el.appendChild(componentEl);
@@ -36,22 +36,17 @@ function sendForm() {
   formEl.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    var name = document.getElementById("name");
-    var email = document.getElementById("email");
-    var message = document.getElementById("msg");
     const success = document.querySelector(".contact__message__success");
     const danger = document.querySelector(".contact__message__danger");
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
 
-    if (name.value === "" || email.value === "" || message.value === "") {
+    if (data.name === "" || data.email === "" || data.message === "") {
       danger.style.display = "block";
       setTimeout(() => {
         danger.style.display = "none";
       }, 2000);
     } else {
-      const formData = new FormData(event.target);
-      const data = Object.fromEntries(formData.entries());
-      console.log(data);
-
       fetch("https://apx-api.vercel.app/api/utils/dwf", {
         method: "POST",
         headers: { "content-type": "application/json" },
