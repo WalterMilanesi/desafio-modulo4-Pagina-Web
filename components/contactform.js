@@ -10,7 +10,7 @@ function createElContactForm(el) {
       </label>
       <label>
         <h3 class="contact__label">Email</h3>
-        <input type="mail" class="contact__input" name="email" id="email"/>
+        <input type="email" class="contact__input" name="email" id="email"/>
       </label>
       <label>
         <h3 class="contact__label">Mensaje</h3>
