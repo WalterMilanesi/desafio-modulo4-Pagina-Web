@@ -10,30 +10,30 @@ function createElFooter(el) {
   </div>
 
   <div class="footer__redes-sociales">
-    <div class="footer__red-social">
+    <a href="https://www.instagram.com/nadienacefit/" class="footer__red-social">
       <p class="footer__red-social__texto">Instagram</p>
       <img
         class="footer__red-social__logotipo"
         src="./images/instagram.svg"
         alt="Logo de Instagram"
       />
-    </div>
-    <div class="footer__red-social">
-      <p class="footer__red-social__texto">Linkedin</p>
+    </a>
+    <a href="https://www.facebook.com/NadieNaceFit" class="footer__red-social">
+      <p class="footer__red-social__texto">Facebook</p>
       <img
         class="footer__red-social__logotipo"
-        src="./images/linkedin.svg"
-        alt="Logo de Linkedin"
+        src="./images/facebook.svg"
+        alt="Logo de Facebook"
       />
-    </div>
-    <div class="footer__red-social">
-      <p class="footer__red-social__texto">Github</p>
+    </a>
+    <a href="https://nadienacefit.com/" class="footer__red-social">
+      <p class="footer__red-social__texto">Blog</p>
       <img
         class="footer__red-social__logotipo"
-        src="./images/github.svg"
-        alt="Logo de Github"
+        src="./images/worldwideweb.svg"
+        alt="Logo de una web"
       />
-    </div>
+    </a>
   </div>
     `;
   el.appendChild(componentEl);

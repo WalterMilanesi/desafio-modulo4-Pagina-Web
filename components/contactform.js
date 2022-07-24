@@ -42,7 +42,7 @@ function sendForm() {
         to: "waltermilanesi@hotmail.com",
         message: `Nombre De Usuario: ${data.name}, 
         Correo Electrónico: ${data.email}, 
-        Mensaje: ${data.message}`
+        Mensaje: ${data.message}`,
       }),
     })
       .then((res) => res.text())
